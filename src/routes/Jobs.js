@@ -4,8 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import JobCard from './JobCard';
 import SearchForm from './SearchForm';
-import JoblyApi from './JoblyApi';
-import UserContext from "./UserContext";
+import JoblyApi from '../JoblyApi';
+import UserContext from "../context/UserContext";
 
 function Jobs() {
     const { currentUser, setCurrentUser } = useContext(UserContext);

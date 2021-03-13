@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CompanyCard from './CompanyCard';
 import SearchForm from './SearchForm';
-import JoblyApi from './JoblyApi';
+import JoblyApi from '../JoblyApi';
 
 function Companies() {
     const [isLoading, setIsLoading] = useState(true);

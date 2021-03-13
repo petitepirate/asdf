@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Alert from 'react-bootstrap/Alert';
-import JoblyApi from './JoblyApi';
+import JoblyApi from '../JoblyApi';
 
 function SignupLogin( { setToken} ) {
     const history = useHistory();

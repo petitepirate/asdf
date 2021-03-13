@@ -4,8 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import JobCard from './JobCard';
-import JoblyApi from './JoblyApi';
-import UserContext from "./UserContext";
+import JoblyApi from '../JoblyApi';
+import UserContext from "../context/UserContext";
 
 function Company() {
     const { currentUser, setCurrentUser } = useContext(UserContext);

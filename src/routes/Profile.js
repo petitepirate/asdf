@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect, useRef } from "react";
-import UserContext from "./UserContext";
+import UserContext from "../context/UserContext";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Alert from 'react-bootstrap/Alert';
-import JoblyApi from './JoblyApi';
+import JoblyApi from '../JoblyApi';
 
 const MESSAGE_SHOW_PERIOD_IN_MSEC = 3000;
 

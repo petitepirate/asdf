@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { decode } from "jsonwebtoken";
 import { ClipLoader } from "react-spinners";
 import useLocalStorage from './hooks/useLocalStorage';
-import Routes from "./Routes";
+import Routes from "./routes/Routes";
 import JoblyApi from "./JoblyApi";
-import UserContext from "./UserContext";
+import UserContext from "./context/UserContext";
 import AppNav from './AppNav';
 
 export const TOKEN_STORAGE_ID = "jobly-token";
