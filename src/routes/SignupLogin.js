@@ -70,13 +70,13 @@ function SignupLogin( { setToken} ) {
           <Col className="mt-5" md={6}>
             <ButtonGroup className="d-flex justify-content-end">
               <Button 
-                variant="info" 
+                variant="primary" 
                 className={activeView === 'login' ? 'active' : ''}
                 onClick={() => setActiveView('login')}>
                   Login
               </Button>
               <Button 
-                variant="info" 
+                variant="primary" 
                 className={activeView === 'register' ? 'active' : ''}
                 onClick={() => setActiveView('register')}>
                   Register
@@ -132,7 +132,7 @@ function SignupLogin( { setToken} ) {
                   </Form.Group>
                   {formData.errors.length > 0 &&
                   <Alert variant="danger">{formData.errors}</Alert>}
-                  <Button className="d-block ml-auto" variant="info" type="submit">
+                  <Button className="d-block ml-auto" variant="primary" type="submit">
                     {activeView === 'login' ? 'Login' : 'Register'}
                   </Button>
                 </Form>

@@ -14,7 +14,7 @@ export default function SearchForm({ changeHandler, submitHandler, formData }) {
           value={formData.search} 
           placeholder="Enter search term..." />
       </Form.Group>
-      <Button variant="info" type="submit">
+      <Button variant="primary" type="submit">
         Submit
       </Button>
     </Form>

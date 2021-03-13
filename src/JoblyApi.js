@@ -79,7 +79,7 @@ class JoblyApi {
     let res = await this.request(`users/${username}`, data, "patch");
     return res.user;
   }
-  // obviously, you'll add a lot here ...
+
 }
 
 // for now, put token ("testuser" / "password" on class)

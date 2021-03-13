@@ -47,7 +47,6 @@ function Profile() {
           first_name: userForm.first_name || undefined,
           last_name: userForm.last_name || undefined,
           email: userForm.email || undefined,
-          photo_url: userForm.photo_url || undefined,
           password: userForm.password
         };
   
@@ -110,14 +109,6 @@ function Profile() {
                       name="email" 
                       value={userForm.email} 
                       />
-                    <Form.Label className="mb-0"><h5>Photo URL</h5></Form.Label>
-                    <Form.Control 
-                      className="mb-3"
-                      onChange={changeHandler} 
-                      type="text" 
-                      name="photo_url" 
-                      value={userForm.photo_url} 
-                      />
                   <Form.Label className="mb-0"><h5>Re-enter Password</h5></Form.Label>
                   <Form.Control 
                     className="mb-3"
@@ -129,7 +120,7 @@ function Profile() {
                   </Form.Group>
                   {userForm.errors.length > 0 &&
                   <Alert variant="danger">{userForm.errors}</Alert>}
-                  <Button className="w-100" variant="info" type="submit">
+                  <Button className="w-100" variant="primary" type="submit">
                     Save Changes
                   </Button>
                 </Form>
